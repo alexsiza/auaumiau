@@ -1,0 +1,949 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block home %}
+
+<!-- cabeçalho -->
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/servicos.css' %}">
+    <title> teste</title>
+
+
+</head>
+
+
+
+<BODY>
+
+<header>
+
+    <div class="container-logo">
+        <img src="{% static 'image/dasdsssss.png' %}"  width="90px"  height="90" alt="Primeiro slide" >
+
+
+<div class="search-box">
+
+        <input type="text" class="search-txt" placeholder="O que você está buscando?">
+        <a href="#" class="search-btn">
+
+              <img src="{% static 'image/loupe.svg' %}" width="20" height="20" alt="lupa">
+        </a>
+    </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+<!-- MENUS -->
+
+    <div class="menu">
+        <ul>
+
+
+
+            <li><a  href="{% url 'home' %}">     <font size="2">  <font face="times"> HOME </font>    </font> </a></li>
+            <li><a  href="{% url 'area_de_agendamento' %}">   <font size="2" >    <font face="times">AGENDE SEU HORÁRIO </font> </font>  </a></li>
+            <li><a  href="{% url 'servicos' %}">  <font size="2" >   <font face="times">SERVIÇOS </font>  </font>           </a></li>
+            <li><a  href="{% url 'farmacia' %}">  <font size="2" >   <font face="times"> FARMÁCIA  </font>   </font>   </a></li>
+            <li><a  href="{% url 'login' %}">   <font size="2" >     <font face="times"> MINHA CONTA </font>  </font>  </a></li>
+            <li><a  href="{% url 'login' %}">   <font size="2" >     <font face="times"> MEU CARRINHO </font>  </font>  </a></li>
+
+        </ul>
+    </div>
+</header>
+</BODY>
+
+
+
+
+
+
+
+
+
+<head>
+
+  <title>
+PET SHOP AUAU-MIAU
+  </title>
+</head>
+
+
+<body>
+
+<font color="#4682b4">
+
+<font size="70">
+<hr>
+<p align="center">
+
+    <B> <font face="calibri">  CONHEÇA NOSSOS SERVIÇOS  </font> </B>
+<br> <hr> </b>
+</p>
+</font>
+
+</font>
+
+
+
+
+</body>
+<p></p>
+<p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- serviço abaixo  = area banho e tosa-->
+
+
+<!-- COLUNAAAAAAAS!!! -->
+
+
+{% endblock %}
+{% block footer %}
+
+<!-- TITULO 1-->
+
+<br>
+
+
+<br>
+<div class="container footer">
+  <div class="row">
+    <div class="col-md-6">
+
+        <h1> </p> <font  size="5" face="times"> > BANHO & TOSA  </p>  </font> </font>  </h1>
+        <hr>
+
+
+
+    </div>
+
+
+
+<!-- IMAGEM 1-->
+
+
+<div class="container footer">
+  <div class="row">
+
+    <div class="col-md-2">
+
+<div class="card1" style="width: 18rem;" >
+  <img src="{% static 'image/gato.png' %}" class="card-img-top" alt="20" width="200px" height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Banho </h5>
+    <p class="card-text">Gatos </p>
+       <p class="card-text">R$ 95</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+
+  </div>
+</div>
+    </div>
+
+
+
+
+<!-- IMAGEM 2-->
+
+
+    <div class="col-md-2">
+
+      <div class="card2" style="width: 18rem;" >
+  <img src="{% static 'image/dog2.jpeg' %}" class="card-img-top" alt="20" width="200px" height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Banho e tosa (Máquina)</h5>
+    <p class="card-text">Cães pequenos</p>
+       <p class="card-text">R$ 70,00</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+
+  </div>
+</div>
+    </div>
+
+
+
+
+
+<!-- IMAGEM 3-->
+
+<br>
+
+
+    <div class="col-md-2">
+<div class="card3" style="width: 18rem;" >
+
+  <img src="{% static 'image/cao.jpeg' %}" class="card-img-top" alt="20"  width="200px" height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Banho e tosa (Máquina)</h5>
+    <p class="card-text">Cães médios</p>
+       <p class="card-text">R$ 75,00</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+  </div>
+</div>
+    </div>
+
+<P></P>
+      <P></P>
+
+<!-- IMAGEM 4  - COLUNA 2!  -->
+
+<HR>
+
+    <div class="col-md-2">
+
+<div class="card4" style="width: 18rem;" >
+
+  <img src="{% static 'image/peq.jpg' %}" class="card-img-top" alt="20"   width="200px"   height="200px"    >
+  <div class="card-body">
+    <h5 class="card-title">Tesoura</h5>
+    <p class="card-text">Cães pequenos</p>
+       <p class="card-text">R$ 85,00</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+      <br>
+
+  </div>
+</div>
+    </div>
+
+
+      <!-- IMAGEM 5 - COLUNA 2 -->
+
+
+    <div class="col-md-2">
+
+<div class="card5" style="width: 18rem;" >
+
+  <img src="{% static 'image/med.jpeg' %}" class="card-img-top" alt="20"   width="200px"   height="200px"    >
+  <div class="card-body">
+    <h5 class="card-title">Tesoura</h5>
+    <p class="card-text">Cães médios / Gatos</p>
+       <p class="card-text">R$ 110,00</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+      <br>
+
+
+
+  </div>
+</div>
+    </div>
+
+
+
+
+
+      <!--IMAGEM 6 - COLUNA 2 -->
+
+ <div class="col-md-2">
+
+
+<div class="card6" style="width: 18rem;" >
+
+  <img src="{% static 'image/dog3.png' %}" class="card-img-top" alt="20"   width="200px"   height="200px"    >
+  <div class="card-body">
+    <h5 class="card-title">Tesoura</h5>
+    <p class="card-text">Cães Grandes</p>
+       <p class="card-text">R$ 140,00</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+      <br>
+
+  </div>
+</div>
+    </div>
+<P></P>
+<HR>
+  </div>
+</div>
+
+<br>
+
+
+      <!-- AREA BEM-ESTAR - COLUNA 1 -->
+
+
+
+      <P></P>
+      <P></P>
+<h1> </p> <font  size="5" face="times"> >BEM-ESTAR <HR>  </p>  </font> </font>  </h1>
+
+
+<br>
+
+<div class="container footer">
+  <div class="row">
+
+    <div class="col-md-2">
+
+<div class="card1" style="width: 18rem;" >
+  <img src="{% static 'image/walker.jpeg' %}" class="card-img-top" alt="20" width="200px" height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Dog Walker</h5>
+    <p class="card-text">Relax (4 passeios) </p>
+       <p class="card-text">R$ 160,00</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+
+  </div>
+</div>
+    </div>
+
+
+
+
+
+
+
+<br>
+
+    <div class="col-md-2">
+
+      <div class="card2" style="width: 18rem;" >
+  <img src="{% static 'image/walker2.jpeg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Dog Walker</h5>
+    <p class="card-text">Ativo (8 passeios)</p>
+       <p class="card-text">R$ 320,00</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+<br>
+  </div>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+
+    <div class="col-md-2">
+<div class="card3" style="width: 18rem;" >
+
+  <img src="{% static 'image/acu.jpeg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Acupultura Veterinaria</h5>
+    <p class="card-text">  Bem-estar </p>
+       <p class="card-text">Preço a definir </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+  </div>
+</div>
+    </div>
+<P></P>
+<HR>
+
+
+
+
+
+
+
+ <!-- serviço = area da educação = adestramento e hospedagem-->
+
+
+      <P></P>
+      <P></P>
+<h1> </p> <font  size="5" face="times"> >EDUCAÇÃO <HR>  </p>  </font> </font>  </h1>
+
+
+<br>
+
+<div class="container footer">
+  <div class="row">
+
+
+  <!-- IMAGEM 1 - EDUCAÇÃO- COLUNA 1-->
+
+    <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/ades.jpeg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Adestramento</h5>
+    <p class="card-text">Cães</p>
+       <p class="card-text"> Escolha o tipo </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+  </div>
+</div>
+    </div>
+
+            <!-- IMAGEM 2 - EDUCAÇÃO- COLUNA 1-->
+
+
+    <div class="col-md-2">
+<div class="card4" style="width: 18rem;" >
+
+  <img src="{% static 'image/guia.jpg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Adestramento </h5>
+    <p class="card-text">Cão-guia</p>
+       <p class="card-text">R$--</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+  </div>
+</div>
+    </div>
+
+
+
+       <!-- IMAGEM 3 - EDUCAÇÃO- COLUNA 1-->
+
+
+
+    <div class="col-md-2">
+<div class="card4" style="width: 18rem;" >
+
+  <img src="{% static 'image/hospcat.jpeg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Hospedagem </h5>
+    <p class="card-text">Gatos de todo porte</p>
+       <p class="card-text">R$55,00</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+  </div>
+</div>
+    </div>
+
+<p></p>
+<hr>
+
+
+
+       <!-- IMAGEM 4 - EDUCAÇÃO- COLUNA 2-->
+
+
+
+    <div class="col-md-2">
+<div class="card4" style="width: 18rem;" >
+
+  <img src="{% static 'image/hospcao.png' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Hospedagem </h5>
+    <p class="card-text">Cães (até 10kg)</p>
+       <p class="card-text">R$60,00</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+  </div>
+</div>
+    </div>
+
+
+
+
+
+       <!-- IMAGEM 5 - EDUCAÇÃO- COLUNA 2-->
+
+
+
+    <div class="col-md-2">
+<div class="card4" style="width: 18rem;" >
+
+  <img src="{% static 'image/h.jpeg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Hospedagem </h5>
+    <p class="card-text">Cães )De 10,1kg até 20kg)</p>
+       <p class="card-text">R$65,00</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+  </div>
+</div>
+    </div>
+
+
+
+
+
+       <!-- IMAGEM 6 - EDUCAÇÃO- COLUNA 2-->
+
+
+
+    <div class="col-md-2">
+<div class="card4" style="width: 18rem;" >
+
+  <img src="{% static 'image/hh.jpeg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Hospedagem </h5>
+    <p class="card-text">Cães )Acima de 20kg)</p>
+       <p class="card-text">R$75,00</p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+  </div>
+</div>
+    </div>
+
+
+
+
+
+      <!-- AREA TRANSPORTE -->
+
+
+
+      <P></P>
+      <P></P>
+<h1> </p> <font  size="5" face="times"> >TRANSPORTE <HR>  </p>  </font> </font>  </h1>
+
+
+<br>
+
+<div class="container footer">
+  <div class="row">
+
+
+  <!-- IMAGEM 1 - TRANSPORTE- COLUNA 1-->
+
+    <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/tt.jpg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Taxi Dog</h5>
+    <p class="card-text">Cães e gatos</p>
+       <p class="card-text"> R$ - </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+
+  </div>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+
+  <!-- IMAGEM 2 - TRANSPORTE- COLUNA 1-->
+
+    <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/TELE.jpg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Tele busca</h5>
+    <p class="card-text">Cães e gatos</p>
+       <p class="card-text"> R$ - </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+
+  </div>
+</div>
+    </div>
+<p></p>
+<hr>
+
+
+
+      <!-- serviços médicos -->
+
+
+      <P></P>
+      <P></P>
+<h1> </p> <font  size="5" face="times"> >SERVIÇOS MÉDICOS/VETERINÁRIOS <HR>  </p>  </font> </font>  </h1>
+
+
+<br>
+
+<div class="container footer">
+  <div class="row">
+
+
+<!-- imagem 1  - SERVIÇOS MÉDICOS - COLUNA 1 -->
+
+
+    <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/cc.jpg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Cunsulta Clínica</h5>
+    <p class="card-text">Geral e especializada</p>
+       <p class="card-text"> R$ - </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+  </div>
+</div>
+    </div>
+
+
+
+<!-- IMAGEM 2 - SERVIÇOS MEDICOS -->
+
+
+
+    <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/ad.jpg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Atendimento domiciliar</h5>
+    <p class="card-text"  >  -    </p>
+       <p class="card-text"> R$ - </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+  </div>
+</div>
+    </div>
+
+
+<!-- IMAGEM 3 - SERVIÇOS MEDICOS -->
+
+
+
+    <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/vasc.png' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Vascinação</h5>
+    <p class="card-text"> -  </p>
+       <p class="card-text"> R$ - </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+  </div>
+</div>
+    </div>
+<p></p>
+<hr>
+
+
+<!-- IMAGEM 4 - SERVIÇOS MEDICOS -->
+
+
+    <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/prev.jpg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Preventivos</h5>
+    <p class="card-text"> - </p>
+       <p class="card-text"> R$ - </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+  </div>
+</div>
+    </div>
+
+<!-- IMAGEM 5 - SERVIÇOS MEDICOS -->
+
+
+
+
+    <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/cir.jpg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Cirurgias</h5>
+    <p class="card-text"> - </p>
+       <p class="card-text"> R$ - </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+  </div>
+</div>
+    </div>
+
+
+
+
+
+
+    <!-- serviços estéticos-->
+
+
+
+      <P></P>
+      <P></P>
+<h1> </p> <font  size="5" face="times"> >SERVIÇOS ESTÉTICOS <HR>  </p>  </font> </font>  </h1>
+
+
+<br>
+
+<div class="container footer">
+  <div class="row">
+
+
+
+
+
+    <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/ting.jpeg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Tingimento nos pelos</h5>
+    <p class="card-text"> - </p>
+       <p class="card-text"> R$ - </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+  </div>
+</div>
+    </div>
+
+
+
+
+
+    <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/esc.jpg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title"> Escovação de dentes </h5>
+    <p class="card-text"> - </p>
+       <p class="card-text"> R$ - </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+  </div>
+</div>
+    </div>
+
+
+
+
+    <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/limp.jpg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Limpeza de ouvido</h5>
+    <p class="card-text"> - </p>
+       <p class="card-text"> R$ - </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+  </div>
+</div>
+    </div>
+
+<p></p>
+      <hr>
+
+
+
+
+    <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/cort.jpg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Corte de Unhas</h5>
+    <p class="card-text"> - </p>
+       <p class="card-text"> R$ - </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+  </div>
+</div>
+    </div>
+
+<p></p>
+      <hr>
+
+
+
+
+
+
+      <P></P>
+      <P></P>
+<h1> </p> <font  size="5" face="times"> >ADICIONAIS + <HR>  </p>  </font> </font>  </h1>
+
+
+<br>
+
+<div class="container footer">
+  <div class="row">
+
+      <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/pent.jpeg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+      <h5 class="card-title">Penteado </h5>
+    <p class="card-text"> - </p>
+       <p class="card-text"> R$ 5,00 </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+  </div>
+</div>
+    </div>
+
+
+
+
+
+
+      <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/tat.jpeg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+      <h5 class="card-title">Tatuagem</h5>
+    <p class="card-text"> - </p>
+       <p class="card-text"> R$ 15,00 </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+  </div>
+</div>
+    </div>
+
+
+
+ <div class="col-md-2">
+<div class="card1" style="width: 18rem;" >
+
+  <img src="{% static 'image/doquinho.jpg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+      <h5 class="card-title">Hidratação</h5>
+    <p class="card-text"> - </p>
+       <p class="card-text"> R$ 5,00 </p>
+    <a href="{% url 'area_de_agendamento' %}" class="btn btn-primary"> AGENDE SEU HORÁRIO </a>
+
+
+  </div>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p></p>
+      <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</div>
+<div>
+
+</div>
+
+  </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+</header>
+{% endblock %}
