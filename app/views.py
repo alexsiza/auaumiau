@@ -19,3 +19,6 @@ def servicos(request):
 
 def farmacia(request):
     return render(request, 'farmacia.html')
+
+def cadastro(request):
+    return render(request, 'cadastro.html')

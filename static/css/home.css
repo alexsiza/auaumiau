@@ -49,14 +49,6 @@ margin-top: 5px;
 
 
 
-.menu{  /*ORGANIZAÇÃO DO MENU*/
-
-    justify-items: center;
-    margin-left: 20px;
-    align-items: center;
-}
-
-
 .menu li {  /*BOTÕES EM ORDEM HORIZONTAL E SEPARADOS*/
  display: flex;
     display: inline-block;
@@ -65,26 +57,27 @@ margin-top: 5px;
 
 }
 
+
+
 .menu li a {    /*TEXTO SOBRE QUADRADOS*/
 
     font-size: 24px;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+    align-items: center;
+    display: flex;
 
-    background-color: white;
-     padding: 0px 8px;
+    background-color: white; /* cor do quadrado */
+    padding: 10px 15px;
     border-radius: 5px;
 }
 
 
 .menu li a:hover{ /*opacidade da seleção*/
 
-    background-color: rgba(100,100, 100, 0.5);
+    background-color: rgba(90,90, 100, 0.5);
 }
-
-
-
 
 
 /* carrosel */
