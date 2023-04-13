@@ -22,3 +22,6 @@ def farmacia(request):
 
 def cadastro(request):
     return render(request, 'cadastro.html')
+
+def animale(request):
+    return render(request, 'animale.html')

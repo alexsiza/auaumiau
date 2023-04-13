@@ -26,7 +26,6 @@ align-items: center;
        padding: 0px 25px;
         align-items: center;
 
-
 }
 
 
@@ -127,14 +126,9 @@ align-items: center;
 
 
 
+/*alinha o componente card do bootstrap */
 
 
-.col-md-2 {
-
-    display: table;
-
-
-}
 
 
 
@@ -186,7 +180,6 @@ align-items: center;
 .menu{
     align-items: center;
 }
-
 
 
 
