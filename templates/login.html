@@ -3,32 +3,83 @@
 
 {% block title %}Login{% endblock %}
 {% block body %}
-<h1>Bem-vindo(a) de volta! </h1>
-
-
-<!-- formulario de login -->
-
-
-<form>
-    <div>
-
-
-        <label>Usuário:</label>
-        <input type="text" name="name" id="name">
-    </div>
-    <div>
-        <label>Senha:</label>
-        <input type="password " name="mail" id="mail">
-    </div>
-    <div>
-        <input type="submit" value="Enviar">
-    </div>
-</form>
 
 
 
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
 
 
+ <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+
+    </head>
+
+    <body>
+
+        <div id="login">
+
+            <form class="card">
+
+                <div class="card-header">
+
+                    <h6> <p align="center"> Bem-vindo(a) de volta!  <p/> </h6>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-content-area">
+
+                        <label for="usuario">Usuário: </label>
+
+                        <input type="text" id="usuario" autocomplete="off">
+
+                    </div>
+
+                    <div class="card-content-area">
+
+                        <label for="password">Senha: </label>
+
+                        <input type="password" id="password" autocomplete="off">
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+
+                    <input type="submit" value="Login" class="submit">
+
+                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+
+                </div>
+
+
+                 <div class="card-footer">
+
+
+
+                    <a href="#" class="recuperar_senha"> Cadastre-se </a>
+
+                </div>
+
+
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>
 
 
 
