@@ -2,56 +2,75 @@
 
 {% load static %}
 
-{% block title %}SELECIONE O SERVIÇO{% endblock %}
+{% block title %}agenda{% endblock %}
 
 {% block body %}
 
 
-    <link rel="stylesheet" href="{% static 'css/agenda.css' %}">
+<script>
+
+    alert ("Olá, bem-vindo a area de agendamento");
 
 
 
 
+</script>
 
 
-<style>
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
 
 
-  .imagemContain {
-    background-image: url(https://i.pinimg.com/564x/c5/a6/29/c5a62949866bc216d3866b1aad367877.jpg);
-
-    background-size: contain;
-}
+ <link rel="stylesheet" href="{% static 'css/ag.css' %}">
 
 
-</style>
+</head>
 
 
 
-<body>
+ <body>
+
+        <div id="login">
+
+            <form class="card">
+
+
+
+
   <div class="box imagemContain">
 
        <H1 class="top" >
 
    <br>
+             <div class="menu">
+           <li><a  href="{% url 'home' %}">     <font size="2">  <font face="times"> HOME </font>    </font> </a></li>
+             </div>
      <p  align="center">   <font size="5">   <font face="times"> <B>  AREA DE AGENDAMENTO   </B> </font>     </font>  </p>    </H1>
 
 <hr>
 
-    <H4>  <b>      <font face="times"> <p align="center"> <font size="3"> QUAL O TAMANHO DO SEU PET?  </font>  </p> </font>   </b></H4>
+    <H4>  <b>      <font face="times"> <p align="center"> <font size="3"> Selecione o tipo de animal doméstico  </font>  </p> </font>   </b></H4>
 
 <hr>
 
    <p align="center">
-        <button  type="button" class="btn btn-outline-primary">  <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >   Cão</button> <br>
+
+       <a  href="{% url 'agenda2' %}">  <button  type="button" class="btn btn-outline-primary">  <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >   Cão  </button>  </a> <br>
         <br>
-        <button   type="button" class="btn btn-outline-secondary">  <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >      Gato</button> <br>
+       <a  href="{% url 'agenda2' %}"> <button   type="button" class="btn btn-outline-secondary">  <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >      Gato </button> </a> <br>
         <br>
-        <button   type="button" class="btn btn-outline-success">   <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >      Coelho </button> <br>
+       <a  href="{% url 'agenda2' %}"> <button   type="button" class="btn btn-outline-success">   <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >      Coelho </button> </a> <br>
         <br>
-        <button    type="button" class="btn btn-outline-danger">   <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >    Porco </button> <br>
-        <br>
-        </p>
+       <a  href="{% url 'agenda2' %}"> <button    type="button" class="btn btn-outline-danger">   <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >    Hamster </button> </a> <br>
+       <br>
+
+   </p>
+
 
 <p></p>
 <p></p>
@@ -63,14 +82,7 @@
 
   </div>
     <p class="paragrafo">
-
-
-
-
-
-
-</body>
-
+    </p>
 
 
 
@@ -79,24 +91,11 @@
 
 
 
+            </form>
 
+        </div>
 
-
-    <!-- botoes multipla escolha c/ imagens       TAMANHO    -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </body>
 
 
 
@@ -109,110 +108,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- MENUS -->
-      <div class="menu">
-          <ul>
-
-<hr>     <li><a  href="{% url 'home' %}">     <font size="2">  <font face="times"> HOME </font>    </font> </a></li>
-     <hr>
-          </ul>
-
-      </div>
-
-
-
-<style>
-
-
-  .imagemContain {
-
-    background-image: url(https://i.pinimg.com/564x/c5/a6/29/c5a62949866bc216d3866b1aad367877.jpg);
-
-    background-size: contain;
-}
-
-
-</style>
-
-
-
-
-<body>
-  <div class="box imagemContain">
-
-       <H1 class="top" >
-
-   <br>
-     <p  align="center">   <font size="5">   <font face="times"> <B>SELECIONE O SERVIÇO   </B> </font>     </font>  </p>    </H1>
-
-<hr>
-
-    <H4>  <b>      <font face="times"> <p align="center"> <font size="3"> QUAL O TAMANHO DO SEU PET?  </font>  </p> </font>   </b></H4>
-
-<hr>
-
-   <p align="center">
-        <button  type="button" class="btn btn-outline-primary">  <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >   Mini (Até 5kg)</button> <br>
-        <br>
-        <button   type="button" class="btn btn-outline-secondary">  <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >      Pequeno (Até 10kg)</button> <br>
-        <br>
-        <button   type="button" class="btn btn-outline-success">   <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >      Médio (Até 20kg) </button> <br>
-        <br>
-        <button    type="button" class="btn btn-outline-danger">   <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >    Grande (Acima de 20kg) </button> <br>
-        <br>
-        </p>
-
-<p></p>
-<p></p>
-<p></p> <p></p>
-<p></p><p></p>
-<p></p>
-<hr>
-
-
-  </div>
-    <p class="paragrafo">
-
-
-
-
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- botoes multipla escolha c/ imagens       TAMANHO    -->
 
 
 

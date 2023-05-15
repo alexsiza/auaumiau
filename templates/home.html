@@ -2,12 +2,20 @@
 {% load static %}
 {% block home %}
 
-<html lang="pt" xmlns="http://www.w3.org/1999/html">
+
 
 <!-- chama o css-->
+<head>
 
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <meta charset="UTF-8">
 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+    </head>
 
 
 <!-- IMAGEM E LUPA -->
@@ -18,21 +26,21 @@
 <header>
 
     <div class="container-logo">
-        <img src="{% static 'image/dasdsssss.png' %}"  width="90px"  height="90" alt="Primeiro slide" >
+        <a  href="{% url 'home' %}">    <img src="{% static 'image/dasdsssss.png' %}"  width="90px"  height="90" alt="Primeiro slide" >
+       </a>
 
+<div class="seearch-boxx">
 
-<div class="search-box">
-
-        <input type="text" class="search-txt" placeholder="O que você está buscando?">
-        <a href="#" class="search-btn">
+        <input type="text" class="seearch-txxt" placeholder="O que você está buscando?" name="q" id="q">
+        <a href="#" class="seearch-btnn">
 
               <img src="{% static 'image/loupe.svg' %}" width="20" height="20" alt="lupa">
+
         </a>
     </div>
 
 
         </div>
-
 
 
 
@@ -82,7 +90,19 @@
 
 <!-- TITULO -->
 
-<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <title>
 PET SHOP AUAU-MIAU

@@ -10,7 +10,7 @@ def teste(request):
 def login(request):
     return render(request, 'login.html')
 
-def area_de_agendamento(request):
+def agenda(request):
     return render(request, 'agenda.html')
 
 def home(request):
@@ -27,9 +27,17 @@ def cadastro(request):
 
 def pet(request):
     return render(request, 'pet.html')
+def name(request):
+    return render(request, 'name.html')
 
 def serv(request):
     return render(request, 'serv.html')
+def serv2(request):
+    return render(request, 'serv2.html')
+
+def agenda2(request):
+    return render(request, 'agenda2.html')
+
 
 
 def person_create(request):

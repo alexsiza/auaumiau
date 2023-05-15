@@ -8,7 +8,7 @@
 header{    /*cabeçalho do meu*/
 
     width: 100%;
-    background-color: steelblue;  /*cor do cabeçalho*/
+    background-color: #00DEBD;  /*cor do cabeçalho*/
     display: flex;    /* menus na mesma linha*/
     justify-content: space-between;  /*margen*/
     align-items: center;
@@ -181,7 +181,12 @@ align-items: center;
     align-items: center;
 }
 
+.col-md-2 {
 
+    display: table;
+
+
+}
 
 
 

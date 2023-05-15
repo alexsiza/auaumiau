@@ -2,56 +2,61 @@
 
 {% load static %}
 
-{% block title %}SELECIONE O SERVIÇO{% endblock %}
+{% block title %}serv{% endblock %}
 
 {% block body %}
 
 
-    <link rel="stylesheet" href="{% static 'css/agenda.css' %}">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+
+ <link rel="stylesheet" href="{% static 'css/serv.css' %}">
+
+    </head>
 
 
 
 
+ <body>
 
+        <div id="login">
 
-<style>
-
-
-  .imagemContain {
-    background-image: url(https://i.pinimg.com/564x/c5/a6/29/c5a62949866bc216d3866b1aad367877.jpg);
-
-    background-size: contain;
-}
-
-
-</style>
+            <form class="card">
 
 
 
-<body>
   <div class="box imagemContain">
 
        <H1 class="top" >
 
    <br>
-     <p  align="center">   <font size="5">   <font face="times"> <B>AREA DE AGENDAMENTO  </B> </font>     </font>  </p>    </H1>
+     <p  align="center">   <font size="5">   <font face="times"> <B>  AREA DE AGENDAMENTO   </B> </font>     </font>  </p>    </H1>
 
 <hr>
 
-    <H4>  <b>      <font face="times"> <p align="center"> <font size="3"> SELECIONE O SERVIÇO  </font>  </p> </font>   </b></H4>
+    <H4>  <b>      <font face="times"> <p align="center"> <font size="3"> Selecione o tipo de serviço </font>  </p> </font>   </b></H4>
 
 <hr>
 
    <p align="center">
-        <button  type="button" class="btn btn-outline-primary">  <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >   Cão</button> <br>
+
+       <a  href="{% url 'serv2'  %}">  <button  type="button" class="btn btn-outline-primary">  <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >   Dog Waker   </button>  </a> <br>
         <br>
-        <button   type="button" class="btn btn-outline-secondary">  <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >      Gato</button> <br>
+       <a  href="{% url 'agenda' %}"> <button   type="button" class="btn btn-outline-secondary">  <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >      Banho e tosa </button> </a> <br>
         <br>
-        <button   type="button" class="btn btn-outline-success">   <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >      Coelho </button> <br>
+       <a  href="{% url 'agenda' %}"> <button   type="button" class="btn btn-outline-success">   <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >      Transporte </button> </a> <br>
         <br>
-        <button    type="button" class="btn btn-outline-danger">   <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >    Porco </button> <br>
-        <br>
-        </p>
+       <a  href="{% url 'agenda' %}"> <button    type="button" class="btn btn-outline-danger">   <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >    Adestramento </button> </a> <br>
+       <br>
+
+   </p>
+
 
 <p></p>
 <p></p>
@@ -69,7 +74,6 @@
 
 
 
-</body>
 
 
 
@@ -77,25 +81,11 @@
 
 
 
+            </form>
 
+        </div>
 
-
-
-
-    <!-- botoes multipla escolha c/ imagens       TAMANHO    -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </body>
 
 
 

@@ -155,7 +155,8 @@ margin-top: 5px;
 
 
 
-.search-box{
+
+.seearch-boxx{
     position: relative;
     top: 50%;
     left: 50%;
@@ -168,18 +169,18 @@ margin-top: 5px;
     justify-content: space-between;
     align-items: center;
 }
-.search-txt{
+.seearch-txxt{
     border: none;
     background: none;
     outline: none;
     padding: 0;
-   color: white;
+   color: black;
     font-size: 16px;
     line-height: 40px;
     width: 0;
     transition: 0.2s;
 }
-.search-btn{
+.seearch-btnn{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -189,15 +190,13 @@ margin-top: 5px;
     align-items: center;
 
 }
-.search-box:hover> .search-txt{
+.seearch-boxx:hover> .seearch-txxt{
     width: 240px;
 }
 
 .menu{
     align-items: center;
 }
-
-
 
 .col-md-2 {
 

@@ -4,6 +4,7 @@ let soma = age + 10;
 let multi = age * 2;
 let sub =multi-age;
 
+
 if(age > 60){
     console.log("Idoso");
     alert("Idoso");
@@ -21,15 +22,16 @@ while(age>0){
 }
 
 function over(){
-    var aaa = document.getElementById('footer').style.backgroundImage="url('/static/image/urso.jpeg')";
+    var aaa = document.getElementById('footer').style.backgroundImage="url('/static/image/rem.jpeg')";
     console.log(aaa);
 }
 function out(){
-    document.getElementById('footer').style.backgroundImage="url('/static/image/image.jpeg')";
+    document.getElementById('footer').style.backgroundImage="url('/static/image/tat.jpeg')";
 }
 function saveAge(){
     var ageVar = document.getElementById('ageVar').value;
     age = ageVar;
+
     if(age > 60){
         console.log("Idoso");
         alert("Idoso");
