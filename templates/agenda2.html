@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}agenda2{% endblock %}
+
+{% block body %}
+
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+
+ <link rel="stylesheet" href="{% static 'css/agenda2.css' %}">
+
+    </head>
+
+
+
+
+
+
+ <body>
+<div id="login">
+
+            <form class="card">
+
+
+
+
+  <div class="box imagemContain">
+
+       <H1 class="top" >
+
+   <br>
+
+     <p  align="center">   <font size="5">   <font face="times"> <B> AREA DE AGENDAMENTO  </B> </font>     </font>  </p>    </H1>
+
+<hr>
+
+    <H4>  <b>      <font face="times"> <p align="center"> <font size="3"> Qual o tamanho do seu pet?  </font>  </p> </font>   </b></H4>
+
+<hr>
+
+   <p align="center">
+       <a href="{% url 'serv' %} " > <button  type="button" class="btn btn-outline-primary">  <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >   Mini (Até 5kg)</button> </a> <br>
+        <br>
+       <a href="{% url 'serv' %} " >    <button   type="button" class="btn btn-outline-secondary">  <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >      Pequeno (Até 10kg)</button> </a> <br>
+        <br>
+       <a href="{% url 'serv' %} " >  <button   type="button" class="btn btn-outline-success">   <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >      Médio (Até 20kg) </button> </a> <br>
+        <br>
+       <a href="{% url 'serv' %} " >  <button    type="button" class="btn btn-outline-danger">   <img src="{% static 'image/dasdsssss.png' %}"  width="20px"  height="20" alt="Primeiro slide" >    Grande (Acima de 20kg) </button> </a> <br>
+        <br>
+        </p>
+
+<p></p>
+<p></p>
+<p></p> <p></p>
+<p></p><p></p>
+<p></p>
+<hr>
+
+
+  </div>
+    <p class="paragrafo">
+
+</p>
+
+
+
+            </form>
+
+        </div>
+
+    </body>
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- botoes multipla escolha c/ imagens       TAMANHO    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

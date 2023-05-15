@@ -1,0 +1,81 @@
+body {
+
+    padding: 0;
+
+    margin: 0;
+
+    background-color: #00DEBD;
+
+}
+
+.card {
+
+
+    padding: 10px;
+
+    border-radius: 30px;
+
+    width:980px;
+    height: 480px
+
+}
+
+
+
+
+
+
+/* BUTÕES */
+
+
+
+.btn-outline-primary{
+
+     font-size: 20px;
+    padding-left: 270px;
+
+    padding-right: 270PX;
+
+
+}
+
+
+
+
+.btn-outline-secondary{
+
+     font-size: 20px;
+
+    padding-left: 250px;
+
+    padding-right: 240PX;
+
+}
+
+.btn-outline-success{
+
+     font-size: 20px;
+
+
+
+
+    padding-left: 250px;
+
+    padding-right: 250PX;
+
+}
+
+.btn-outline-danger{
+
+     font-size: 20px;
+
+
+
+
+    padding-left: 240px;
+
+    padding-right: 240PX;
+
+}
+
+

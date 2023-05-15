@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}nome{% endblock %}
+
+{% block body %}
+
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" href="{% static 'css/name.css' %}">
+
+    </head>
+
+
+ <body>
+
+        <div id="login">
+
+            <form class="card">
+
+
+
+  <div class="box imagemContain">
+
+       <H1 class="top" >
+
+   <br>
+     <p  align="center">   <font size="5">   <font face="times"> <B>  QUAL O NOME DO SEU PET?   </B> </font>     </font>  </p>    </H1>
+
+
+    <form class="row g-3">
+        <div class="col-md-10">
+            <label for="name" class="form-label">Pet</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+</form>
+
+
+        </div>
+  </div>
+            </form>
+        </div>
+    </body>
+
+
+
+
+
+{% endblock %}

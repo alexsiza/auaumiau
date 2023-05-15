@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Serv2{% endblock %}
+
+{% block body %}
+
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+
+ <link rel="stylesheet" href="{% static 'css/serv2.css' %}">
+
+    </head>
+
+
+
+
+ <body>
+
+        <div id="login">
+
+            <form class="card">
+
+
+
+  <div class="box imagemContain">
+
+       <H1 class="top" >
+
+   <br>
+     <p  align="center">   <font size="5">   <font face="times"> <B>  TEMOS 2 SERVIÇOS DOG WALKER DISPONÍVEIS   </B> </font>     </font>  </p>    </H1>
+
+<hr>
+    <H4>  <b>      <font face="times"> <p align="center"> <font size="3"> Selecione o tipo de serviço </font>  </p> </font>   </b></H4>
+
+<hr>
+
+
+
+<div class="container footer">
+  <div class="row">
+
+    <div class="col-md-2">
+
+<div class="card2" style="width: 18rem;" >
+  <img src="{% static 'image/walker.jpeg' %}" class="card-img-top" alt="20" width="200px" height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Dog Walker</h5>
+    <p class="card-text">Relax (4 passeios) </p>
+       <p class="card-text">R$ 160,00</p>
+    <a href="{% url 'name' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+
+  </div>
+</div>
+    </div>
+
+<br>
+
+
+
+
+      <div class="col-md-2">
+
+      <div class="card2" style="width: 18rem;" >
+  <img src="{% static 'image/walker2.jpeg' %}" class="card-img-top" alt="20" width="200px"   height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Dog Walker</h5>
+    <p class="card-text">Ativo (8 passeios)</p>
+       <p class="card-text">R$ 320,00</p>
+    <a href="{% url 'name' %}" class="btn btn-primary">AGENDE SEU HORÁRIO</a>
+
+<br>
+  </div>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+        </div>
+  </div>
+            </form>
+        </div>
+    </body>
+
+
+
+
+
+{% endblock %}
