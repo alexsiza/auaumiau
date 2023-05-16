@@ -4,17 +4,14 @@
 {% block title %}Cadastro de Person{% endblock %}
 
 {% block body %}
+<div class="container position-absolute top-50 start-50 translate-middle">
+    <h2>Cadastro de Cliente</h2>
 
 <form id="form" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
-    <div class="mb-3">
-        <label class="form-label">Email address</label>
-        <div class="form-control">
-        {{ person_form.email }}
-        </div>
-    </div>
+
     {{ person_form }}
-    <button type="submit" >Salvar</button>
+    <button type="submit" >cadastrar</button>
 </form>
 
 {% endblock %}

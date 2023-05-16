@@ -8,3 +8,4 @@ class PersonViewSet(viewsets.ModelViewSet):
     serializer_class = PersonSerializer
     queryset = Person.objects.all()
     filter_fields = ('name', 'age', 'password', 'email', 'address', 'cpf')
+

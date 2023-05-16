@@ -17,9 +17,21 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+from app import views
+from rest_framework import routers
+from app.viewsets import PersonViewSet
 
+router = routers.DefaultRouter()
+router.register(r'person', PersonViewSet, basename="Person")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app.urls')),
+    path("create_person", views.person_create, name='create_person'),
+    path("read_person", views.person_read, name='read_person'),
+    path("update_person/<int:id>", views.person_update, name='update_person'),
+    path("delete_person/<int:id>", views.person_delete, name='delete_person'),
+    path("update_doc/<int:id>", views.doc_update, name='update_doc'),
+    path("delete_doc/<int:id>", views.doc_delete, name='delete_doc'),
+    path('api/', include(router.urls)),
 ]

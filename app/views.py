@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
-from .forms  import PersonForm
+from .forms import PersonForm
 from .models import Person
 
 # Create your views here.
@@ -48,7 +48,7 @@ def person_create(request):
     if person_form.is_valid():
         person = person_form.save(commit=False)
         person.save()
-    return render(request, 'person_create.html',
+    return render(request, 'person_create.html.html',
                   {'person_form':person_form})
 
 def person_read(request):
@@ -68,7 +68,7 @@ def person_update(request, id):
         person.save()
 
     return render(request,
-                  'person_create.html',
+                  'person_create.html.html',
                   {"person_form":person_form})
 
 def person_delete(request, id):
